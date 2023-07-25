@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "247420552692",
+    "project_id": "bdformulario-675ca",
+    "storage_bucket": "bdformulario-675ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247420552692:android:86c395f4ca3a182e6425a1",
+        "android_client_info": {
+          "package_name": "com.example.proyecto2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247420552692-slgdkl1d02jfu6afqaftotv1aauudqq6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPWsCp3BZPaftD1uta9jzNmKrOEOlppmk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "247420552692-slgdkl1d02jfu6afqaftotv1aauudqq6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

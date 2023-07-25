@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/estrellas">
+
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/login1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Inp_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe tu correo "
+        app:layout_constraintTop_toBottomOf="@+id/Logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.12"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColorHint="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="20dp"
+            android:drawableTint="#688BE4"
+            android:textColor="@color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Inp_Contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe tu contraseña"
+        app:layout_constraintTop_toBottomOf="@+id/Inp_Email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:endIconMode="password_toggle"
+        android:textColorHint="@color/white"
+
+        >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/LContraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColor="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/Btn_Recordar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_Olvidar"
+        android:clickable="true"
+        app:layout_constraintTop_toBottomOf="@id/Inp_Contraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.04"
+        app:layout_constraintHorizontal_bias="0.497"
+
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textColor="#FFEB3B"/>
+
+    <Button
+        android:id="@+id/Btn_Login"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#688BE4"
+        android:hint="Ingresar"
+        android:textSize="20dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/linea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Inp_Contraseña"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <TextView
+        android:id="@+id/txt_Regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="¿No tiene cuenta?"
+        android:padding="8dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Btn_Login"
+        android:textColorHint="@color/white" />
+
+
+    <Button
+        android:id="@+id/Btn_Registrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:backgroundTint="@android:color/transparent"
+        android:hint="Registrarse"
+        android:padding="0.0dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txt_Regist"
+        app:layout_constraintTop_toBottomOf="@+id/Btn_Login"
+        app:layout_constraintVertical_bias="0.09"
+        android:textColorHint="#FFEB3B"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80"/>
+
+
+    <ImageView
+        android:id="@+id/logo_google"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/google"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/logo_face"
+        app:layout_constraintTop_toTopOf="@id/linea"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"/>
+
+    <ImageView
+        android:id="@+id/logo_face"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/facebook"
+        app:layout_constraintStart_toEndOf="@+id/logo_google"
+        app:layout_constraintEnd_toStartOf="@+id/logo_twitter"
+        app:layout_constraintTop_toTopOf="@id/linea"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/logo_twitter"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/twitter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logo_face"
+        app:layout_constraintTop_toTopOf="@id/linea" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

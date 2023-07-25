@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordarPassActivity"
+    android:background="@drawable/fondo3">
+
+
+    <TextView
+        android:id="@+id/txtMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="20dp"
+        android:text="@string/txtRecuperar"
+        android:textSize="23dp"
+        android:textColor="#B71C1C"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/txtEmail2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawableTint="#688BE4"
+        android:drawablePadding="20dp"
+        android:textColor="@color/white"
+        android:hint="Ej: Usuario@gmail.com"
+        android:padding="25dp"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMensaje"
+        app:layout_constraintVertical_bias="0.1"
+        android:textColorHint="@color/white"></EditText>
+
+    <Button
+        android:id="@+id/Btn_Enviar"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#688BE4"
+        android:drawableRight="@drawable/round_east_24"
+        android:hint="Enviar"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail2"
+        app:layout_constraintVertical_bias="0.2"
+        android:textColorHint="@color/white">
+
+    </Button>
+
+    <Button
+        android:id="@+id/Btn_Atras"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#688BE4"
+        android:drawableLeft="@drawable/baseline_west_24"
+        android:hint="Atras"
+
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Btn_Enviar"
+        app:layout_constraintVertical_bias="0.2"
+        android:textColorHint="@color/white">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

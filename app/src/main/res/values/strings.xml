@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Proyecto2</string>
+    // Se almacenan los recursos de textos que necesitemos en la aplicacion
+    <string name="str_Olvidar"><u>¿Olvido su contraseña?</u></string>
+    <string name="txtRecuperar"><p>Escribe tu correo electrònico y te enviaremos las instrucciones para restablecer la contraseña. </p> </string>
+    <string name="txtLogin"><p>¿ Ya eres miembro ? </p></string>
+    <string name="txtIniciar"><u>Iniciar sesiòn </u></string>
+
+</resources>
